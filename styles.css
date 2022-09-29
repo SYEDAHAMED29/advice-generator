@@ -1,3 +1,64 @@
+:root {
+   --cyan: hsl(193, 38%, 86%);
+   --neon: hsl(150, 100%, 66%);
+   ---blue: hsl(217, 19%, 38%);
+   --gray: hsl(217, 19%, 24%);
+   --darkBlue: hsl(218, 23%, 16%);
+}
 body {
-   background-color: black;
+   font-family: "Manrope", sans-serif;
+   background-color: var(--darkBlue);
+}
+
+main {
+   height: auto;
+   width: 600px;
+   padding: 2rem;
+   margin: 8rem auto;
+   text-align: center;
+   background-color: var(--gray);
+   border-radius: 1rem;
+}
+
+h3 {
+   color: var(--neon);
+   letter-spacing: 7px;
+   font-weight: 400;
+   font-size: 1rem;
+}
+.advice {
+   font-weight: 800;
+   font-size: 2rem;
+   color: var(--cyan);
+   margin-bottom: 2rem;
+}
+
+.divider {
+   width: 100%;
+   margin-bottom: 2rem;
+}
+
+button {
+   text-align: center;
+   background-color: var(--neon);
+   width: 75px;
+   height: 75px;
+   cursor: pointer;
+   border-radius: 100%;
+   border: 1px solid var(--neon);
+   margin: 0 auto;
+   position: absolute;
+   left: auto;
+   right: auto;
+   top: auto;
+   bottom: auto;
+}
+
+button:hover {
+   box-shadow: 0 0 40px -5px var(--neon);
+}
+.dice-svg {
+   background-color: var(--neon);
+   padding: 0.5rem;
+   width: 30px;
 }
